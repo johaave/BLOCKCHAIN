@@ -38,7 +38,7 @@ class Blockchain:
 
     def is_valid_proof_of_work(self, block):
         block_hash = block.calculate_block_hash()
-        difficulty = 4  # Ajusta la dificultad según tus necesidades
+        difficulty = 4  
         return block_hash.startswith('0' * difficulty)
 
     def is_valid_chain(self):

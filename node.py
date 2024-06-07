@@ -2,6 +2,10 @@ import json
 import requests
 from blockchain import Blockchain
 
+#implementa un nodo en una red de blockchain.
+#Un nodo es una entidad que participa en la red de blockchain, 
+#mantiene una copia de la cadena de bloques y se comunica con otros nodos para sincronizarse y transmitir información.
+
 class Node:
     def __init__(self, host, port):
         self.host = host
